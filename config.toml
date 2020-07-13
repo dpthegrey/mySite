@@ -1,0 +1,182 @@
+baseURL = "https://dpthegrey.github.io/"
+title   = "I'm Dhairya."
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = false
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "D"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Nice theme for homepages and blogs"
+  keywords = "dpthegrey dp developer software engineer computer information technology pro plus"
+  images = [""]
+
+  homeSubtitle = "Computer Engineer."
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Sharing buttons
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  enableSharingButtons = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#252627"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Uncomment this if you want a portrait on your start page
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/dpthegrey"
+  [[params.social]]
+    name = "gitlab"
+    url = "https://gitlab.com/dpthegrey"
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/dpthegrey"
+  [[params.social]]
+    name = "instagram"
+    url  = "https://www.instagram.com/dpthegrey/"
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/dpthegrey"
+  [[params.social]]
+    name = "medium"
+    url  = "https://medium.com/@dpthegrey"
+  [[params.social]]
+    name = "codepen"
+    url  = "https://codepen.io/dpthegrey"
+  [[params.social]]
+    name = "hackerrank"
+    url  = "https://www.hackerrank.com/dpthegrey"
+  [[params.social]]
+    name = "codechef"
+    url  = "https://www.codechef.com/users/dpthegrey"
+  [[params.social]]
+    name = "docker"
+    url  = "https://hub.docker.com/u/dpthegrey"
+  [[params.social]]
+    name = "kaggle"
+    url = "https://www.kaggle.com/dpthegrey"
+  [[params.social]]
+    name = "dev"
+    url  = "https://dev.to/dpthegrey"
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://stackoverflow.com/users/10841788/dpthegrey"
+  [[params.social]]
+    name = "facebook"
+    url = "https://www.facebook.com/dpthegrey"
+  [[params.social]]
+    name = "email"
+    url  = "mailto:dpthegrey@gmail.com"
+  [[params.social]]
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UC_qz8jpWvW88LA7RSyK2Q4w" 
+  [[params.social]]
+    name = "twitch"
+    url = "https://www.twitch.tv/dpthegrey"
+
+
+[languages]
+  [languages.en]
+    subtitle  = ""
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener"></a>'
+
+  [languages.fr]
+    subtitle  = ""
+    weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener"></a>'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+#   [[menu.main]]
+#     identifier = "posts"
+#     name       = "Posts"
+#     url        = "posts/"
